@@ -8,10 +8,8 @@ public class Sleep {
         int cYear;
         int cMonth;
         int cDay;
-
         Scanner input = new Scanner(System.in);
         NumberFormat comma = NumberFormat.getIntegerInstance();
-
         System.out.println("Enter your birthdate:");
         System.out.print("Year: ");
         bYear = input.nextInt();
@@ -19,7 +17,7 @@ public class Sleep {
         bMonth = input.nextInt();
         System.out.print("Day: ");
         bDay = input.nextInt();
-        System.out.println("Enter today's date:");
+        System.out.println("Enter todays date:");
         System.out.print("Year: ");
         cYear = input.nextInt();
         System.out.print("Month: ");
@@ -32,7 +30,5 @@ public class Sleep {
 
         System.out.println("You have been alive for " + comma.format(timeAlive) + " days.");
         System.out.println("You have slept for " + comma.format(timeSlept) + " hours.");
-
-
     }
 }
